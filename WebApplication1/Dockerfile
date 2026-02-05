@@ -2,7 +2,7 @@
 FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS base
 WORKDIR /app
 # Render usa un puerto dinámico, pero exponemos el que configuramos por defecto
-EXPOSE 8080
+EXPOSE 10000
 
 # Etapa de compilación
 FROM mcr.microsoft.com/dotnet/sdk:10.0 AS build
